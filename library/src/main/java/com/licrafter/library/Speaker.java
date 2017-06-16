@@ -32,7 +32,7 @@ public class Speaker {
 
         createBase();
         createSmallWawe(width * 0.75f, height / 2);
-        createBigWawe(width, height / 2);
+        createBigWawe(width*0.95f, height / 2);
     }
 
     private void createBase() {

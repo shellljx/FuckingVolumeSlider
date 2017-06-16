@@ -8,6 +8,10 @@ public class Point {
     public float x;
     public float y;
 
+    public Point() {
+
+    }
+
     public Point(float x, float y) {
         this.x = x;
         this.y = y;
@@ -16,6 +20,11 @@ public class Point {
     public void trans(float x, float y) {
         this.x += x;
         this.y += y;
+    }
+
+    public void set(float x, float y) {
+        this.x = x;
+        this.y = y;
     }
 
     @Override
