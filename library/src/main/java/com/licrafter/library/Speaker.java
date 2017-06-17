@@ -3,7 +3,6 @@ package com.licrafter.library;
 import android.animation.FloatEvaluator;
 import android.graphics.Path;
 import android.support.v4.util.ArrayMap;
-import android.util.SparseArray;
 
 /**
  * Created by lijx on 2017/6/16.
