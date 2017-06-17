@@ -40,6 +40,7 @@ mSliderView.setOnVolumeSlideListener(new VolumeSliderView.OnVolumeSlideListener(
 **2. 水波纹绘制与旋转**
 
 水波纹的绘制用到 `canvas.clipPath()` 方法把喇叭的 path 裁剪出来再绘制圆形水波纹就可以了。旋转是对喇叭的 path 执行 Matrix 旋转操作。
+
 ```java
 //clip
 canvas.clipPath(mDrawPath);
