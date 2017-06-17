@@ -35,7 +35,7 @@ mSliderView.setOnVolumeSlideListener(new VolumeSliderView.OnVolumeSlideListener(
 
 后来我在这篇文章里得到了启发 [Android SmileyRating](https://blog.mindorks.com/android-smileyrating-how-i-solved-it-9b5ee30f2c34)，声波可以用四条曲线围起来啊，左右两条二阶贝塞尔曲线，上下两条三阶贝塞尔曲线，一条声波通过 10 个点就可以画出来，而声波也相对于一个中轴对称的，所以只要取出上半部或者下半部的 5 个点就可以确定所有的点。
 
-![](https://cdn-images-1.medium.com/max/1600/1*RDpoOMgInWPG_o1x90kdhQ.jpeg)
+![]http://7vzpfd.com1.z0.glb.clouddn.com/1-RDpoOMgInWPG_o1x90kdhQ.jpeg)
 
 **2. 水波纹绘制与旋转**
 
