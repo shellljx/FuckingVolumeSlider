@@ -10,6 +10,7 @@ import android.graphics.Matrix;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.RectF;
+import android.os.Build;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.Property;
@@ -67,6 +68,11 @@ public class VolumeSliderView extends View {
     }
 
     public void init() {
+
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            //turn off hardwareAccelerated
+            setLayerType(View.LAYER_TYPE_SOFTWARE, null);
+        }
 
         mSpeakerPaint = new Paint();
         mSpeakerPaint.setStyle(Paint.Style.FILL);
