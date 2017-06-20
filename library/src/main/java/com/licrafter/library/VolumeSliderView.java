@@ -114,6 +114,7 @@ public class VolumeSliderView extends View {
         mBallAnimator = new ObjectAnimator();
         mBallAnimator.setTarget(this);
         mBallAnimator.setProperty(BALLLOCATION);
+        mUpAnimator.playTogether(mDegreeAnimator, mBallAnimator);
     }
 
     @Override
@@ -196,8 +197,6 @@ public class VolumeSliderView extends View {
         mBallAnimator.setObjectValues(mBallStart, mBallEnd);
         mBallAnimator.setInterpolator(new AccelerateInterpolator());
         mBallAnimator.setEvaluator(new PathEvaluator(mBallControll));
-
-        mUpAnimator.playTogether(mDegreeAnimator, mBallAnimator);
         mUpAnimator.setDuration(100 + (int) (100 * getDegreeFraction()));
         mUpAnimator.start();
     }
